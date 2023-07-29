@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    $('header button').on('click', function(){
-        $('.menu, header button').toggleClass('active');
+    $('header #ricos').on('click', function(){
+        $('.menu, header #riscos').toggleClass('active');
     });
     $(function(){
         $("#slides").slidesjs({
@@ -21,7 +21,7 @@ $(document).ready(function(){
             height: 528
         });
     });
-    $('.owl-carousel').owlCarousel({
+    $('#cardgrande').owlCarousel({
         loop:true,
         margin:10,
         nav:true,
@@ -29,12 +29,38 @@ $(document).ready(function(){
             0:{
                 items:1
             },
-            600:{
-                items:3
+            820:{
+                items:2
             },
             1000:{
-                items:5
+                items:2
+            },
+            1200:{
+                items:3
             }
         }
     })
+
+$('#cardpequeno').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        800:{
+            items:4
+        },
+        1000:{
+            items:5
+        },
+        1200:{
+            items:6
+        }
+    }
+})
 });

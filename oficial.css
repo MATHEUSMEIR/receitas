@@ -1,10 +1,9 @@
  header{
     background-color: rgb(237,207,57);
     width: 100%;
-    height: 110px;
+    height: 120px;
     float: center;
     z-index: 9999;
-    background-repeat: no-repeat;
 }
 
 footer{
@@ -20,7 +19,7 @@ footer{
 }
 
 .owl-carousel .receita{
-    width: 300px;
+    width: 400px;
     height: 600px;
     border-radius: 50px 25px 50px 25px;
     color:black;
@@ -51,59 +50,49 @@ footer{
     padding: auto;
 }
 
-#divBusca{
+.divBusca{
     background-color:#E0EEEE;
     border:solid 2px #5F9EA0;
-    border-radius:10px;
-    width:300px;
+    border-radius:15px;
+    width:293px;
     height:32px;
-  }
+    display: flex;
+    justify-content: right
+    ;
+}
+
   
-  #txtBusca{
-    float:left;
+#txtBusca{
     background-color:transparent;
     padding-left:5px;
     font-size:18px;
     border:none;
     height:32px;
     width:191px;
-  }
+    margin-top: auto;
+}
   
-  #btnBusca{
+#btnbusca{
+    margin-top: auto;
     border:none;
-    float:left;
     height:32px;
     border-radius:0 7px 7px 0;
-    width:70px;
     font-weight:bold;
-    background:#5F9EA0;
-  }
-  
-  #divBusca img{
-    float:left;
-  }
+    background:transparent;
+}
 
+#fotobusca{
+    height:25px;
+    width: 25px;
+    float: right;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
+#logo1{
+    margin-top: auto;
+    width: 130px;
+    height: 100px;
+    float: left;
+}
 
 @media screen and (min-width: 1024px){
     header, footer{
@@ -113,17 +102,17 @@ footer{
     header .menu{
         padding: 0 15px;
         width: calc(100% - 240px);
-        margin-left: 40px;
+        margin-left: 20px;
     }
 
-    header button{
+    header #riscos{
         display:none;
     }
 }
 
 @media screen and (max-width: 1023px){
-    header button,
-    header button span {
+    header #riscos,
+    header #riscos span {
         display: inline-block;
         transition: all .5s;
         box-sizing: border-box;
@@ -149,23 +138,23 @@ footer{
         background-color: #fff;
         border-radius: 4px;
     }
-    header button span:nth-of-type(1) {
+    header #riscos span:nth-of-type(1) {
         top: 0;
     }
-    header button span:nth-of-type(2) {
+    header #riscos span:nth-of-type(2) {
         top: 15px;
     }
-    header button span:nth-of-type(3) {
+    header #riscos span:nth-of-type(3) {
         bottom: 0;
     }
-    header button.active span:nth-of-type(1) {
+    header #riscos.active span:nth-of-type(1) {
         -webkit-transform: translateY(20px) rotate(-45deg);
         transform: translateY(20px) rotate(-45deg);
     }
-    header button.active span:nth-of-type(2) {
+    header #riscos.active span:nth-of-type(2) {
         opacity: 0;
     }
-    header button.active span:nth-of-type(3) {
+    header #ricos.active span:nth-of-type(3) {
         -webkit-transform: translateY(-11px) rotate(45deg);
         transform: translateY(-11px) rotate(45deg);
     }
@@ -180,11 +169,6 @@ footer{
         padding: 20px;
     }
 
-    footer .logo{
-        width: 100%;
-        height: 60px;
-    }
-
     header .menu{
         width: 100%;
         position: absolute;
@@ -193,7 +177,7 @@ footer{
         z-index: 999999;
         overflow: hidden;
         transition: all 0.3s;
-        background-color: #333;
+        background-color: #ec082e;
     }
 
     header .menu.active{
@@ -203,14 +187,14 @@ footer{
 
     header .menu a{
         width: 100%;
-        float: left;
+        float: right;
         line-height: 30px;
     }
 
-    header .logo{
-        width: 50px;
-        margin-top: 10px;
-        margin-left: 20px;
+    header #logo1{
+        width: 100px;
+        height: 60px;
+        margin-top: auto;
+        margin-right: 10px;
     }
-
 }

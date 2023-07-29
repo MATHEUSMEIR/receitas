@@ -4,34 +4,32 @@
         <title>1001 Receitas</title>
         <meta charset="utf-8">
         <meta name="author" content="Matheus Meireles">
-
         <link type="text/css" rel="stylesheet" href="oficial.css">
         <link type="text/css" rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
         <link type="text/css" rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     </head>
     <body>
         <header>
-            <button class="riscos">
+            <button id="riscos">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <div class="logo"></div>
+            <img src="1085445.png" id="logo1"/>
+            <div id="pesquisa" class="divBusca">
+                <input type="text" id="txtBusca" placeholder="Buscar Receitas..."/>
+                
+                <button id="btnbusca"><img src="magnifier-1_icon-icons.com_56924.png" alt="Buscar..." id="fotobusca"/></button>
+            </div>
+
             <div class="menu">
-
-                <div id="divBusca">
-                    <img src="magnifier-1_icon-icons.com_56924.png" alt="Buscar..." id="fotobusca"/>
-                    <input type="text" id="txtBusca" placeholder="Buscar..."/>
-                    <button id="btnBusca">Buscar</button>
-                  </div>
-
                 <a href="">Minhas Receitas</a>
                 <a href="">Meus Dados</a>
-                <a href="div .sobre">Sobre</a>
+                <a href=".sobre">Sobre</a>
             </div>
         </header>
             <div class="nome"><h1>1001 Receitas</h1></div>
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel owl-theme" id="cardgrande">
                 <div class="receita"><h2 class="cima">1</h2></div> 
                 <div class="receita"><h2 class="cima">3</h2></div>
                 <div class="receita"><h2 class="cima">5</h2></div>
@@ -40,7 +38,7 @@
                 <div class="receita"><h2 class="cima">11</h2></div>
             </div>
             <div>
-                <div class="owl-carousel owl-theme">
+                <div class="owl-carousel owl-theme" id="cardpequeno">
                 <div class="card"><h4>1</h4></div>
                 <div class="card"><h4>2</h4></div>
                 <div class="card"><h4>3</h4></div>
