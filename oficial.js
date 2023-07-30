@@ -30,7 +30,7 @@ $(document).ready(function(){
                 items:1
             },
             820:{
-                items:2
+                ibtems:2
             },
             1000:{
                 items:2
