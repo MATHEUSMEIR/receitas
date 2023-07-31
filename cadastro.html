@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Formulário 1001 Receitas</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Matheus Meireles">
+        <link type="text/css" rel="stylesheet" href="cadastro.css">
+    </head>
+    <body>
+        <form>
+                <h1>CRIAR CADASTRO</h1>
+                Nome:<br>
+                <input type="text"/><br>
+                E-mail:<br>
+                <input type = "email"><br>
+                Sigla do seu Estado:<br>
+                <input type = "text" autocomplete="off" maxlength="2"><br>
+                Telefone:<br>
+                <input type = "tel" id="telefone" autocomplete="off" maxlength="15"><br>
+                Senha:<br>
+                <input type="password"/><br>
+                Confirmar Senha:<br>
+                <input type = "password">
+                <h3>Qual seu objetivo<br> com o site</h3>
+                <input class="botao" type="radio" id="0" name="objetivo" value="compartilhar">
+                <label class="radio" for="0">Compartilhar Receitas</label><br>
+                <input class="botao" type="radio" id="1" name="objetivo" value="receber">
+                <label class="radio" for="1">Receber Receitas</label><br>
+                <input class="botao" type="radio" id="2" name="objetivo" value="tudo">
+                <label class="radio" for="2">Um pouco de cada</label><br>
+                <input class="enviar" type = "submit"><br>           
+        </form>
+        <script src="cadastro.js" type="text/javascript" ></script>
+    </body>
+</html>
